@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .layout {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .nav {
+            background-color: #34495e;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .sidebar {
+            /*
+            background-color: #e67e22;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;*/
+            display: none;
+        }
+
+        .panel {
+            /*
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;*/
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
     <header class="header"></header>
-<nav class="nav"></nav>
-<div class="layout">
-<aside class="sidebar"></aside>
-<main class="main">
-<section class="hero"></section>
-<section class="cards"></section>
-<section class="stats"></section>
-</main>
-<aside class="panel"></aside>
-</div>
-<footer class="footer"></footer>
-    
+    <nav class="nav"></nav>
+    <div class="layout">
+        <aside class="sidebar"></aside>
+        <main class="main">
+            <section class="hero">HERO</section>
+            <section class="cards">CARDS</section>
+            <section class="stats">STATS</section>
+        </main>
+        <aside class="panel">PANEL</aside>
+    </div>
+    <footer class="footer">FOOTER</footer>
+
 </body>
+
 </html>
